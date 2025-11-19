@@ -51,7 +51,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Home Cleaning</h5>
                     <p class="card-text">Pembersihan rumah rutin, bersih dan rapi setiap hari.</p>
-                    <a href="{{ url('/homecleaning') }}" class="btn btn-outline-primary btn-sm">Detail</a>
+                    <a href="{{ url('/homecleaning?order=1') }}" class="btn btn-outline-primary btn-sm">Detail</a>
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Deep Cleaning</h5>
                     <p class="card-text">Pembersihan mendalam untuk area sulit dan kotoran membandel.</p>
-                    <a href="{{ url('/deepcleaning') }}" class="btn btn-outline-primary btn-sm">Detail</a>
+                    <a href="{{ url('/deepcleaning?order=1') }}" class="btn btn-outline-primary btn-sm">Detail</a>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Office Cleaning</h5>
                     <p class="card-text">Kebersihan kantor profesional untuk lingkungan kerja nyaman.</p>
-                    <a href="{{ url('/officecleaning') }}" class="btn btn-outline-primary btn-sm">Detail</a>
+                    <a href="{{ url('/officecleaning?order=1') }}" class="btn btn-outline-primary btn-sm">Detail</a>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                 <div class="card-body">
                     <h5 class="card-title">AC Cleaning & Service</h5>
                     <p class="card-text">Perawatan dan pembersihan AC agar udara tetap segar.</p>
-                    <a href="{{ url('/accleaning') }}" class="btn btn-outline-primary btn-sm">Detail</a>
+                    <a href="{{ url('/accleaning?order=1') }}" class="btn btn-outline-primary btn-sm">Detail</a>
                 </div>
             </div>
         </div>
