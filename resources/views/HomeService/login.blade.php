@@ -19,7 +19,7 @@
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" name="password" required>
-                    </div>
+                    </div>  
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary">Login</button>
                         <a href="{{ route('homeservice.index') }}" class="btn btn-secondary">Cancel</a>

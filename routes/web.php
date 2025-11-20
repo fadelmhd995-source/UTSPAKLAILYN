@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeServiceController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ContactController;
 
 
 Route::get('/', [HomeServiceController::class, 'index'])->name('index');
@@ -27,3 +28,4 @@ Route::get('/tentangkami', [HomeServiceController::class, 'tentangkami'])->name(
 Route::get('/shop', [HomeServiceController::class, 'shop'])->name('shop');
 Route::post('/shop/recommend', [ShopController::class, 'recommend'])->name('shop.recommend');
 Route::post('/order', [OrderController::class, 'store'])->name('order.store');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');

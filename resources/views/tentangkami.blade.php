@@ -46,4 +46,5 @@
         </div>
     </div>
 </div>
+@include('partials.contact-form')
 @endsection
