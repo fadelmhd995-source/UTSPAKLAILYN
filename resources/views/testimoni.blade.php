@@ -1,3 +1,4 @@
+{{-- filepath: c:\xampp\htdocs\UTSPAKLAILYN\resources\views\testimoni.blade.php --}}
 @extends('layouts.master')
 
 @section('title', 'Testimoni')
@@ -8,6 +9,11 @@
     <h1 class="fw-bold text-center mb-5">Pesan Testimoni</h1>
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @if(session('success'))
+                <div class="alert alert-success">
+                    Pesan testimoni berhasil dikirim. Kami akan menampilkan testimoni Anda.
+                </div>
+            @endif
             <div class="card">
                 <div class="card-body">
                     <form action="{{ route('testimoni.store') }}" method="POST">
