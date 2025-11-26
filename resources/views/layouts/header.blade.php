@@ -22,6 +22,9 @@
                             <li><a class="dropdown-item" href="{{ route('ACcleaning') }}">AC Cleaning</a></li>
                         </ul>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link {{ request()->is('testimoni') ? 'active' : '' }}" href="{{ route('testimoni') }}">Testimoni</a>
+                    </li>   
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('tentangkami') ? 'active' : '' }}" href="{{ url('/tentangkami') }}">Tentang Kami</a>
                     </li>

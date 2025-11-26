@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\HomeService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Testimoni;
 
 class HomeServiceController extends Controller
 {
@@ -195,5 +196,23 @@ class HomeServiceController extends Controller
     {
         // Logic for handling shop recommendations can be added here
         return view('shop.recommend');
+    }
+
+    public function testimoni ()
+    {
+        return view('testimoni');
+    }
+    
+    public function testimoniStore(Request $request)
+    {
+        $data = $request->validate([
+            'nama' => 'required|string|max:255',
+            'pesan' => 'required|string',
+            'rating' => 'required|integer|min:1|max:5',
+        ]);
+
+        \App\Models\Testimoni::create($data);
+
+        return redirect()->back()->with('success', 'Testimoni berhasil dikirim!');
     }
 }

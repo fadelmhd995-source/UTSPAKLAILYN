@@ -45,6 +45,5 @@
             <img src="{{ asset('images/f2.png') }}" alt="Komitmen Kualitas" class="img-fluid rounded-4 shadow">
         </div>
     </div>
-</div>
-@include('partials.contact-form')
+</div> 
 @endsection
